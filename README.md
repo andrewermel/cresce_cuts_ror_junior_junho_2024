@@ -1,27 +1,52 @@
-# README
+Store Management System
+Um sistema de gerenciamento de lojas construído com Ruby on Rails. Este aplicativo permite que os usuários gerenciem lojas, clientes, pedidos e itens.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Indice
+ - Recursos
+ - Instalação
+ - Uso
+ - Rodando Testes
+ - Contribuição
+ - Licença
 
-Things you may want to cover:
+ Recursos
+ - Gerenciamento de lojas com detalhes como nome, descrição e endereço
+ - Gerenciamento de clientes com detalhes como nome, e-mail e endereço
+ - Criação e gerenciamento de pedidos associados a clientes e lojas
+ - Gerenciamento de itens e itens de pedidos
 
-* Ruby version
+ Instalação
+ Pré-requisitos
+ Certifique-se de ter os seguintes softwares instalados:
 
-* System dependencies
+ - Ruby (versão 2.7.0 ou superior)
+ - Rails (versão 6.0 ou superior)
+ - PostgreSQL
 
-* Configuration
+ Configuração (rodar no terminal)
+  git clone https://github.com/seu-usuario/store-management-system.git
+  cd store-management-system
 
-* Database creation
+instalações de dependencias
+  - bundle install
 
-* Database initialization
+configurando o banco de dados
 
-* How to run the test suite
+  - rails db:create
+  - rails db:migrate
+  - rails db:seed
 
-* Services (job queues, cache servers, search engines, etc.)
+inicie o servidor
 
-* Deployment instructions
+ - rails s
 
-* ...
+http://localhost:3000
+
+Rodando Testes
+Execute a suíte de testes usando o RSpec:
+
+ - rspec (rodar no terminal para rodar todos os testes)
+
 
 ================================================================================
 
