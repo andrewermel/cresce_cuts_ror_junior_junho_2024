@@ -47,6 +47,48 @@ Execute a suíte de testes usando o RSpec:
 
  - rspec (rodar no terminal para rodar todos os testes)
 
+=============================================================
+
+ Manipulação de Dados via Console
+
+ Acessando o Console do Rails
+ Para abrir o console do Rails, use o seguinte comando:
+
+  - rails console
+
+ Exemplos de Comandos
+ Criar uma nova loja:
+  - Store.create(name: "New Store", description: "A new store description", address: "456 Another St")
+
+ Listar todas as lojas:
+  - Store.all
+
+ Encontrar uma loja por ID:
+  - Store.find(1)
+
+ Atualizar uma loja:
+  store = Store.find(1)
+  store.update(name: "Updated Store Name")
+
+ Deletar uma loja:
+  store = Store.find(1)
+  store.destroy
+
+ Criar um novo cliente:
+  Customer.create(name: "Jane Doe", email: "jane@example.com", address: "789 Different St")
+
+ Listar todos os clientes:
+  Customer.all
+
+ Criar um novo pedido:
+  order = Order.create(customer_id: 1, store_id: 1, status: "pending", total: 100.0)
+
+ Adicionar um item a um pedido:
+  order = Order.find(1)
+  item = Item.find(1)
+  order.order_items.create(item: item, quantity: 2, price: item.price)
+
+
 
 ================================================================================
 
